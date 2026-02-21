@@ -127,7 +127,7 @@ const TablePage = () => {
             )}
           </div>
           <button onClick={() => setCurrentPage(Math.min(currentPage + 1, totalPages))} disabled={currentPage === totalPages} className='border rounded-sm text-sm p-2 cursor-pointer hover:bg-[#f0eeeeac]'>Next</button>
-          <input className='w-12 p-1.5 text-sm border' type="number" value={currentPage} max={totalPages}
+          <input className='w-12 p-1.5 text-sm border' type="number" value={pageInput} max={totalPages}
             onChange={(e) => {
               setPageInput(e.target.value)
             }}
